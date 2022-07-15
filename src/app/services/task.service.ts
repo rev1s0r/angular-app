@@ -5,7 +5,7 @@ import {Task} from '../Task';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'appilcation/json'
+    'Content-Type': 'application/json'
   })
 }
 
