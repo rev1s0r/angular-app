@@ -1,5 +1,5 @@
-import { Component, OnInit,Input } from '@angular/core';
-import {Task} from '../../Task';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {Task} from '../../Task'; //interface
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,6 +10,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class TaskItemComponent implements OnInit {
   //Task is interface
   @Input() task: Task;
+  @Output() onDeleteTask : EventEmitter<Task> = new EventEmitter();
+  @Output() onToggleReminder : EventEmitter<Task> = new EventEmitter();
   faTimes = faTimes;
 
   constructor() { }
@@ -17,4 +19,11 @@ export class TaskItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDelete(task) {
+    this.onDeleteTask.emit(task);
+  }
+
+  onToggle(task) {
+    this.onToggleReminder.emit(task);
+  }
 }
