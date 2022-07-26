@@ -1,23 +1,18 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": false
+      "text": "Test",
+      "day": "14/07/2022 ; 12:07",
+      "comment": "Test comment",
+      "reminder": false,
+      "id": 4
     },
     {
-      "text": "Dentist",
-      "day": "May 12 2023",
+      "text": "Buy a new car",
+      "day": "16/07/2022 ; 12:07",
+      "comment": "Grey color is always nice",
       "reminder": true,
-      "id": 2
-    },
-    {
-      "text": "Buy new car",
-      "day": "31/07/2022 ; 14:07",
-      "comment": "Grey color is nice",
-      "reminder": true,
-      "id": 3
+      "id": 5
     }
   ]
 }
