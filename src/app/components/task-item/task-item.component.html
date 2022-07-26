@@ -7,7 +7,10 @@
     [ngStyle]="{'color':' red'}"
     [icon]="faTimes"></fa-icon></h3>
   <h3>{{task.day}}</h3>
-  <h4
-    [ngStyle]="{'color':' grey'}"
-  >{{task.comment}}</h4>
+
+  <div class="task__comment">
+    <h4>Personal comment</h4>
+    <p>{{task.comment}}</p>
+  </div>
+
 </div>

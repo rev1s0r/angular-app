@@ -4,15 +4,17 @@
   padding: 10px 20px;
   cursor: pointer;
 }
-
 .task.reminder {
   border-left: 5px solid green;
 }
-
 .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.task__comment {
+  color: grey;
+  margin: 8px 0 0 8px;
 }
 
 /*# sourceMappingURL=task-item.component.css.map */
